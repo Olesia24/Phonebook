@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.phonebook.tests.DeleteContactTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-10T18:48:45" hostname="MacBook-Air-Olesia.local" time="1.528">
+<testsuite name="com.phonebook.tests.DeleteContactTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-15T09:13:35" hostname="MacBook-Air-Olesia.local" time="0.967">
   <properties/>
-  <testcase name="deleteContactPositiveTest" classname="com.phonebook.tests.DeleteContactTests" time="1.528"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="deleteContactPositiveTest" classname="com.phonebook.tests.DeleteContactTests" time="0.967"/>
+  <system-out><![CDATA[11:13:34.305 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test deleteContactPositiveTestwith data: []
+11:13:36.133 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED deleteContactPositiveTest
+11:13:36.133 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+11:13:36.133 [Test worker] INFO  com.phonebook.tests.TestBase -- ============================
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

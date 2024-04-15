@@ -12,7 +12,7 @@ import java.util.List;
 
 public class DataProviders {
     @DataProvider
-    public Iterator<Object[]> addNewContact(){
+    public Iterator<Object[]> addNewContact(){//этот тест в ДЗ не далать
         List<Object[]> list = new ArrayList<>();
         list.add(new Object[]{"Anna", "Müller", "1234567890", "annamuel@gmail.com", "Münich","Co-worker"});
         list.add(new Object[]{"Anna1", "Müller", "1234567890", "annamuel@gmail.com", "Münich","Co-worker"});

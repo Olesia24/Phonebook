@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">14</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2.089s</div>
+<div class="counter">15.866s</div>
 <p>duration</p>
 </div>
 </td>
@@ -63,6 +63,9 @@
 <li>
 <a href="#tab0">Tests</a>
 </li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
 </ul>
 <div id="tab0" class="tab">
 <h2>Tests</h2>
@@ -76,10 +79,137 @@
 </thead>
 <tr>
 <td class="success">addContactPositiveTest</td>
-<td class="success">2.089s</td>
+<td class="success">1.867s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">addContactPositiveTestFromDataProviderWithCsvFile[0](Contact{name='John', phone='1234567890', email='john.doe@example.com'})</td>
+<td class="success">1.018s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">addContactPositiveTestFromDataProviderWithCsvFile[1](Contact{name='Alice', phone='5555555555', email='alice.smith@example.com'})</td>
+<td class="success">1.048s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">addContactPositiveTestFromDataProviderWithCsvFile[2](Contact{name='Michael', phone='9876543210', email='michael.j@example.com'})</td>
+<td class="success">1.295s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">addContactPositiveTestFromDataProviderWithCsvFile[3](Contact{name='Sarah', phone='1112223333', email='sarah.brown@example.com'})</td>
+<td class="success">1.045s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">addContactPositiveTestFromDataProviderWithCsvFile[4](Contact{name='David', phone='7778889999', email='david.w@example.com'})</td>
+<td class="success">0.999s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">addContactPositiveTestFromDataProviderWithCsvFile[5](Contact{name='Emily', phone='3334445555', email='emily.t@example.com'})</td>
+<td class="success">1.037s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">addContactPositiveTestFromDataProviderWithCsvFile[6](Contact{name='Olivia', phone='2223334444', email='olivia.m@example.com'})</td>
+<td class="success">1.032s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">addContactPositiveTestFromDataProviderWithCsvFile[7](Contact{name='Ethan', phone='4445556664', email='ethan.a@example.com'})</td>
+<td class="success">1.009s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">addContactPositiveTestFromDataProviderWithCsvFile[8](Contact{name='Eva', phone='6667778888', email='eva.t@example.com'})</td>
+<td class="success">1.070s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">addContactPositiveTestFromDataProviderWithCsvFile[9](Contact{name='Benjamin', phone='8889990000', email='benjamin.l@example.com'})</td>
+<td class="success">1.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">addContactPositiveTestFromDataProvider[0](Anna, Müller, 1234567890, annamuel@gmail.com, Münich, Co-worker)</td>
+<td class="success">1.215s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">addContactPositiveTestFromDataProvider[1](Anna1, Müller, 1234567890, annamuel@gmail.com, Münich, Co-worker)</td>
+<td class="success">1.172s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">addContactPositiveTestFromDataProvider[2](Anna2, Müller, 1234567890, annamuel@gmail.com, Münich, Co-worker)</td>
+<td class="success">1.053s</td>
 <td class="success">passed</td>
 </tr>
 </table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>11:10:52.685 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTestwith data: []
+11:10:55.519 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED addContactPositiveTest
+11:10:55.519 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+11:10:55.519 [Test worker] INFO  com.phonebook.tests.TestBase -- ============================
+11:10:55.524 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTestFromDataProviderwith data: [Anna, Müller, 1234567890, annamuel@gmail.com, Münich, Co-worker]
+11:11:07.146 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED addContactPositiveTestFromDataProvider
+11:11:07.147 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+11:11:07.147 [Test worker] INFO  com.phonebook.tests.TestBase -- ============================
+11:11:07.147 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTestFromDataProviderwith data: [Anna1, Müller, 1234567890, annamuel@gmail.com, Münich, Co-worker]
+11:11:18.612 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED addContactPositiveTestFromDataProvider
+11:11:18.612 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+11:11:18.612 [Test worker] INFO  com.phonebook.tests.TestBase -- ============================
+11:11:18.613 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTestFromDataProviderwith data: [Anna2, Müller, 1234567890, annamuel@gmail.com, Münich, Co-worker]
+11:11:29.954 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED addContactPositiveTestFromDataProvider
+11:11:29.954 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+11:11:29.954 [Test worker] INFO  com.phonebook.tests.TestBase -- ============================
+11:11:29.956 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTestFromDataProviderWithCsvFilewith data: [Contact{name='John', phone='1234567890', email='john.doe@example.com'}]
+11:11:41.292 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED addContactPositiveTestFromDataProviderWithCsvFile
+11:11:41.293 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+11:11:41.293 [Test worker] INFO  com.phonebook.tests.TestBase -- ============================
+11:11:41.293 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTestFromDataProviderWithCsvFilewith data: [Contact{name='Alice', phone='5555555555', email='alice.smith@example.com'}]
+11:11:52.640 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED addContactPositiveTestFromDataProviderWithCsvFile
+11:11:52.640 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+11:11:52.640 [Test worker] INFO  com.phonebook.tests.TestBase -- ============================
+11:11:52.641 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTestFromDataProviderWithCsvFilewith data: [Contact{name='Michael', phone='9876543210', email='michael.j@example.com'}]
+11:12:04.188 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED addContactPositiveTestFromDataProviderWithCsvFile
+11:12:04.188 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+11:12:04.189 [Test worker] INFO  com.phonebook.tests.TestBase -- ============================
+11:12:04.189 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTestFromDataProviderWithCsvFilewith data: [Contact{name='Sarah', phone='1112223333', email='sarah.brown@example.com'}]
+11:12:15.524 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED addContactPositiveTestFromDataProviderWithCsvFile
+11:12:15.525 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+11:12:15.525 [Test worker] INFO  com.phonebook.tests.TestBase -- ============================
+11:12:15.525 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTestFromDataProviderWithCsvFilewith data: [Contact{name='David', phone='7778889999', email='david.w@example.com'}]
+11:12:26.821 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED addContactPositiveTestFromDataProviderWithCsvFile
+11:12:26.821 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+11:12:26.821 [Test worker] INFO  com.phonebook.tests.TestBase -- ============================
+11:12:26.822 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTestFromDataProviderWithCsvFilewith data: [Contact{name='Emily', phone='3334445555', email='emily.t@example.com'}]
+11:12:38.123 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED addContactPositiveTestFromDataProviderWithCsvFile
+11:12:38.124 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+11:12:38.124 [Test worker] INFO  com.phonebook.tests.TestBase -- ============================
+11:12:38.124 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTestFromDataProviderWithCsvFilewith data: [Contact{name='Olivia', phone='2223334444', email='olivia.m@example.com'}]
+11:12:49.487 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED addContactPositiveTestFromDataProviderWithCsvFile
+11:12:49.487 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+11:12:49.487 [Test worker] INFO  com.phonebook.tests.TestBase -- ============================
+11:12:49.487 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTestFromDataProviderWithCsvFilewith data: [Contact{name='Ethan', phone='4445556664', email='ethan.a@example.com'}]
+11:13:00.836 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED addContactPositiveTestFromDataProviderWithCsvFile
+11:13:00.836 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+11:13:00.836 [Test worker] INFO  com.phonebook.tests.TestBase -- ============================
+11:13:00.837 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTestFromDataProviderWithCsvFilewith data: [Contact{name='Eva', phone='6667778888', email='eva.t@example.com'}]
+11:13:12.214 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED addContactPositiveTestFromDataProviderWithCsvFile
+11:13:12.214 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+11:13:12.215 [Test worker] INFO  com.phonebook.tests.TestBase -- ============================
+11:13:12.215 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTestFromDataProviderWithCsvFilewith data: [Contact{name='Benjamin', phone='8889990000', email='benjamin.l@example.com'}]
+11:13:23.516 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED addContactPositiveTestFromDataProviderWithCsvFile
+11:13:23.516 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+11:13:23.516 [Test worker] INFO  com.phonebook.tests.TestBase -- ============================
+</pre>
+</span>
 </div>
 </div>
 <div id="footer">
@@ -89,7 +219,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.7</a> at 10 апр. 2024 г., 20:49:08</p>
+<a href="http://www.gradle.org">Gradle 8.7</a> at 15 апр. 2024 г., 11:13:57</p>
 </div>
 </div>
 </body>

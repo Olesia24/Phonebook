@@ -64,7 +64,7 @@ public class AddContactTests extends TestBase{
         Assert.assertTrue(app.getContact().isContactCreated(name));
     }
 
-    @Test(dataProvider = "addNewContactFromCsvFile", dataProviderClass = DataProviders.class)
+    @Test(dataProvider = "addNewContactFromCsvFile", dataProviderClass = DataProviders.class)//это в дз
     public void addContactPositiveTestFromDataProviderWithCsvFile
             (Contact contact){
         app.getContact().clickOnAddLink();
